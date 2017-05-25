@@ -4,13 +4,19 @@ class Animal {
     this.color = color;
     this.numTails = 1;
   }
+
   // methods / behaviors
+  poop() {
+    console.log(this.name, 'all animals poop');
+  }
 }
 
 // -- sub classes --
 class Cat extends Animal {
-  constructor(name, color){
-    super(name, color);
+  constructor(name, color, claws){ // params - what it takes to create a Cat
+    super(name, color); // super must be first
+    this.lives = 9;
+    this.claws = claws;
   }
   meow(){
     console.log(this.name, 'says meow!');
@@ -35,14 +41,18 @@ class Dog extends Animal {
 // new keyword allow us to create an instance of our class
 // instance mean an object
 var ourDog = new Dog('barkly', 'purple');
-var ourOtherDog = new Dog('bob', 'green');
+var ourCat = new Cat('bob', 'green', 10);
 
 console.log('ourDog ->', ourDog);
-console.log('ourOtherDog ->', ourOtherDog);
-console.log(ourDog.bark());
-console.log(ourOtherDog.bark());
+console.log('ourCat ->', ourCat);
 
-// console.log(Dog.bark());
+console.log(ourDog.bark());
+console.log(ourCat.meow());
+
+console.log(ourCat.poop());
+console.log(ourDog.poop());
+
+console.log(typeof ourDog);
 
 
 
