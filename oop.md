@@ -2,9 +2,6 @@
 ## Objectives
 - Hear about some of the OOP terms and concepts
 
-## Browser Support
-Not all browsers support ES6. Our objective is to see the syntax and talk about some OOP concepts, so we will not be focusing on how to write ES6 for the browser. That said, you can `transpile` i.e. convert ES6 sytnax to ES5 using a tool called [Babel](https://babeljs.io/). They do have a grunt plugin, so it is doable using tools we already have seen.
-
 ## OOP (Object Oriented Programming)
 
 > is a programming paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods.
