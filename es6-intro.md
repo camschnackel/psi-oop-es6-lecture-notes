@@ -26,7 +26,7 @@ This associating variables to the functions they are declared in is called `func
 ### Function Scope vs Block Scope
 ES5 has function scope and work arounds to it, which were shown in mpj's video (link in resources). These work arounds work, but are a lot more code than these new ES6 ways to declare variables. `let` effectively solves our problem above with one keyword and no need to wrap blocks in functions.
 
-## Let Example
+### Let Example
 ```
 for (let i = 0; i < 10; i++) {
   console.log(i);
@@ -35,7 +35,7 @@ for (let i = 0; i < 10; i++) {
 console.log('i after loop -> ', i); // error
 ```
 
-## Const Example
+### Const Example
 Const standing for constant allows us to declare globals in a safer way because const guarantees (i.e. will throw an error) that once declared we can't reassign the value. This prevents messed up state like in the mpj dishwasher example.
 
 ```
@@ -49,6 +49,28 @@ Where we might use it...
 const express = require('express');
 ```
 
+## Arrow Functions
+Shorter syntax for function expressions.
+
+### Declared
+```
+function name(params) {
+    
+}
+```
+### Function Expression
+```
+var name = function(params) {
+    
+}
+```
+
+### Arrow Functions
+```
+var name = (params) => {
+
+}
+```
 ## Resources
 - [Other ES6 Syntax](http://es6-features.org/)
 - [MDN on let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)

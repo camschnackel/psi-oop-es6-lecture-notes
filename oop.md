@@ -1,4 +1,4 @@
-# Psi OOP Lecture Guide
+# OOP Lecture Guide
 ## Objectives
 - Hear about some of the OOP terms and concepts
 
